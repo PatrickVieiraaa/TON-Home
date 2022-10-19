@@ -591,6 +591,12 @@ main {
             height: 60vh;
            
         }
+        .evento::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            display: none;
+          }
         .evento h2 {
             color: var(--cor-branco);
             font-family: var(--fonteSpace);
