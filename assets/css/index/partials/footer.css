@@ -1,0 +1,23 @@
+/* index <footer> */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+}
+
+footer .footerImage img  {
+  width: 90px;
+}
+
+footer .footerContent a {
+  color: #FFF;
+  margin-left: 40px;
+  font-family: var(--fonteSpace);
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+}

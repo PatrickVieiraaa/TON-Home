@@ -1,0 +1,211 @@
+/* index <header> */
+
+header {
+  display: flex;
+ 
+}
+.fundo {
+  background: url(/assets/images/astronaut-mars-collage\ \(1\).jpg) no-repeat left center;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+}
+.fundo img {
+
+  position: absolute;
+  top: -5px;
+  left: 20px;
+  width: 100px;
+
+}
+.content {
+  position:absolute;
+  width: 50%;
+  right: 0;
+  top: 35%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: var(--cor-branco);
+  
+}
+.content h1 {
+
+  font-family: var(--fonteNasa);
+  font-size: 10vh;
+}
+.content p {
+
+  font-family: var(--fonteSpace);
+  font-size: clamp(2vw, 3vw, 5vw);
+}
+
+/*Botão*/
+/* From uiverse.io by @mrhyddenn */
+button {
+  margin-top: 20px;
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 1px solid var(--cor-branco);
+  font-size: 14px;
+  font-family: var(--fonteNasa);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+button:hover {
+  background: #D9534F;
+  box-shadow: 0 0 30px 5px #D9534F;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+button:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+
+button::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: var(--cor-branco);
+  box-shadow: 0 0 50px 30px var(--cor-branco);
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+button:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+
+
+
+
+/* Responsivo */
+
+@media (max-width: 1200px) {
+ 
+
+.fundo {
+  background: url(/assets/images/astronaut-mars-collage\ \(1\).jpg) center  ;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  opacity: 0.5;
+}
+.fundo img {
+
+  position: absolute;
+  top: -5px;
+  left: 20px;
+  width: 100px;
+
+}
+.content {
+  position:absolute;
+  width: 100%;
+  right: 0;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: var(--cor-branco);
+  
+}
+.content h1 {
+
+  font-family: var(--fonteNasa);
+  font-size:10vh;
+}
+.content p {
+
+  font-family: var(--fonteSpace);
+  font-size: 4vh;
+}
+
+}
+
+@media (max-width: 800px) {
+
+  .fundo {
+    background: url(/assets/images/astronaut-mars-collage\ \(1\).jpg) center  ;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    opacity: 0.5;
+  }
+  .fundo img {
+  
+    position: absolute;
+    top: -5px;
+    left: 20px;
+    width: 100px;
+  
+  }
+  .content {
+    position:absolute;
+    width: 100%;
+    right: 0;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: var(--cor-branco);
+    
+  }
+  .content h1 {
+  
+    font-family: var(--fonteNasa);
+    font-size:7vh;
+  }
+  .content p {
+  
+    font-family: var(--fonteSpace);
+    font-size: 3vh;
+  }
+  
+  }
+  
+

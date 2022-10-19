@@ -1,0 +1,638 @@
+main {
+
+    background-color: var(--cor-preto);
+    margin: auto;
+    max-width: 75vw;
+}
+
+/*Eventos*/
+.evento {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+   
+}
+.evento::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 25%;
+  background: linear-gradient( to top, #000000, transparent);
+  z-index: 1000;
+}
+.evento h2 {
+    color: var(--cor-branco);
+    font-family: var(--fonteSpace);
+    font-size: 50px;
+}
+
+
+.evento .marte {
+    position: absolute;
+    right: 0;
+    width: 250px;
+    animation: balanco 10.0s linear infinite;
+
+}
+.evento .kepler {
+    position: absolute;
+    left: 0;
+    width: 300px;
+    animation: balanco 10.0s linear infinite;
+}
+@keyframes balanco {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    50% {
+        transform: scale(1.07) rotate(10deg);
+    }
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+/*Fim de Eventos*/
+
+
+
+/*Voos*/
+
+.voos {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    color: var(--cor-branco);
+    height: 100vh;
+}
+.cardImage {
+
+    position: absolute;
+    left: 0;
+    animation: balanco 10.0s linear infinite;
+}
+
+.tituloVoo h3 {
+
+    font-size: 50px;
+    padding-top: 150px;
+    font-family: var(--fonteNasa);
+}
+
+.vooContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.cards {
+
+    display: flex;
+    gap: 70px;
+    margin-left: 40px;
+    flex-wrap: wrap;
+
+}
+
+.card {
+
+    border-radius: 10px;
+    border-right: 3px solid crimson;
+    border-bottom: 3px solid crimson;
+    width: 18vw;
+    height: 35vh;
+    transition: all 0.2s;
+    text-align: center;
+    padding: 15px;
+}
+.card:hover {
+
+    border-right: 5px solid #87cefa;
+    border-bottom: 5px solid #87cefa;
+}
+
+.card h4 {
+
+    font-family: var(--fonteNasa);
+    margin-bottom: 10px;
+}
+.card h6 {
+
+    font-family: var(--fonteNasa);
+}
+.card .tripulante {
+    font-size: 22px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-family: var(--fonteNasa);
+    margin-top: 20px;
+    margin-bottom: 50px;
+  
+    
+
+}
+.card a {
+   color: #FFF;
+   font-size: 20px;
+   font-family: var(--fonteSpace);
+   border-radius: 5px;
+   padding: 10px;
+   border-bottom: 3px solid crimson;
+    border-right: 3px solid crimson;
+    transition: 0.3s all;
+
+}
+.card a:hover {
+    border-radius: 5px;
+    border-bottom: 3px solid #87cefa;
+    border-right: 3px solid #87cefa;
+}
+.card img{
+    width: 30px;
+    margin-top: 10px;
+    margin-right:10px ;
+
+
+}
+
+
+/*Infos*/
+
+.infos {
+
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/assets/images/solar\ sistem.png) left top;
+    background-size: cover;
+}
+.infos .infoTitle {
+
+    color: var(--cor-branco);
+    font-family:var(--fonteNasa);
+    font-size: 80px;
+
+}
+.infos .infoImage img  {
+   
+    height: 50vh;
+    width: 35vw;
+    animation: nave 8.0s linear infinite;
+}
+
+@keyframes nave {
+    0% {
+        transform: scale(1) rotate(0deg);
+        filter: brightness(100%);
+    }
+    45% {
+        transform: scale(1.03) rotate(-3deg);
+        filter: brightness(100%);
+    }
+    50% {
+        transform: scale(1.05) rotate(-6deg);
+        filter: brightness(190%);
+    }
+    55% {
+        transform: scale(1.03) rotate(-3deg);
+        filter: brightness(100%);
+    }
+    0% {
+        transform: scale(1) rotate(0deg);
+        filter: brightness(100%);
+    }
+}
+
+
+/*video*/
+
+.distancia {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 120vh;
+    z-index: 1000;
+    
+  
+
+    
+}
+.nebula {
+
+    position: absolute;
+    width: 100vw;
+    height: 140vh;
+    
+
+}
+.distancia .titleDist {
+    color: var(--cor-branco);
+    font-size: 60px;
+    text-align: center;
+    font-family: var(--fonteNasa);
+    margin-bottom: 100px;
+    z-index: 99;
+}
+.videoDist {
+
+    z-index: 99;
+}
+
+.explorar {
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+
+}
+
+.titleExp {
+
+    color: var(--cor-branco);
+    font-size: 50px;
+    font-family: var(--fonteNasa);
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+.nebula {
+
+    opacity: 0.6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1200px) {
+    main {
+
+        background-color: var(--cor-preto);
+        margin: auto;
+        max-width: 100vw;
+    }
+    
+    /*Eventos*/
+    .evento {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        height: 100vh;
+       
+    }
+    .evento::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 25%;
+      background: linear-gradient( to top, #000000, transparent);
+      z-index: 1000;
+    }
+    .evento h2 {
+        color: var(--cor-branco);
+        font-family: var(--fonteSpace);
+        font-size: 25px;
+    }
+    
+    
+    .evento .marte {
+        position: absolute;
+        right: 0;
+        width: 250px;
+        animation: balanco 10.0s linear infinite;
+    
+    }
+    .evento .kepler {
+        position: absolute;
+        left: 0;
+        width: 300px;
+        animation: balanco 10.0s linear infinite;
+    }
+    @keyframes balanco {
+        0% {
+            transform: scale(1) rotate(0deg);
+        }
+        50% {
+            transform: scale(1.07) rotate(10deg);
+        }
+        0% {
+            transform: scale(1) rotate(0deg);
+        }
+    }
+    
+    /*Fim de Eventos*/
+    
+    
+    
+    /*Voos*/
+    
+    .voos {
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        color: var(--cor-branco);
+        height: 100vh;
+    }
+    .cardImage {
+    
+        position: absolute;
+        top: 217vh;
+        left: 47%;
+        animation: balanco 10.0s linear infinite;
+    }
+    .cardImage img {
+        width: 10vw;
+        margin-top: 10px;
+    }
+    
+    .tituloVoo h3 {
+    
+        font-size: 50px;
+        margin-bottom: 30vh;
+        font-family: var(--fonteNasa);
+    }
+    
+    .vooContent {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .cards {
+    
+        display: flex;
+        gap: 70px;
+        margin-left: 40px;
+        flex-wrap: wrap;
+    
+    }
+    
+    .card {
+    
+        border-radius: 10px;
+        border-right: 3px solid crimson;
+        border-bottom: 3px solid crimson;
+        width: 100%;
+        height: 35vh;
+        transition: all 0.2s;
+        text-align: center;
+        padding: 15px;
+    }
+    .card:hover {
+    
+        border-right: 5px solid #87cefa;
+        border-bottom: 5px solid #87cefa;
+    }
+    
+    .card h4 {
+    
+        font-family: var(--fonteNasa);
+        margin-bottom: 30px;
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    .card h6 {
+    
+        font-family: var(--fonteNasa);
+        font-size: 25px;
+        margin-bottom: 60px;
+    }
+    .card .tripulante {
+        font-size: 35px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        font-family: var(--fonteNasa);
+        margin-top: 20px;
+        margin-bottom: 70px;
+      
+        
+    
+    }
+    .card a {
+       color: #FFF;
+       font-size: 40px;
+       font-family: var(--fonteSpace);
+       border-radius: 5px;
+       padding: 10px;
+       border-bottom: 3px solid crimson;
+        border-right: 3px solid crimson;
+        transition: 0.3s all;
+    
+    }
+    .card a:hover {
+        border-radius: 5px;
+        border-bottom: 3px solid #87cefa;
+        border-right: 3px solid #87cefa;
+    }
+    .card img{
+        width: 40px;
+        margin-top: 10px;
+        margin-right:10px ;
+    
+    
+    }
+    
+    
+    /*Infos*/
+    
+    .infos {
+    
+        width: 100%;
+        margin-top: 80vh;
+        height: 130vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: url(/assets/images/solar\ sistem.png) center center;
+        background-size: cover;
+    }
+    .infos .infoTitle {
+    
+        color: var(--cor-branco);
+        font-family:var(--fonteNasa);
+        font-size: 70px;
+        text-align: center;
+        padding: 20px;
+    
+    }
+    .infos .infoImage img  {
+       
+        height: 50vh;
+        width: 75vw;
+        animation: nave 8.0s linear infinite;
+    }
+    
+    @keyframes nave {
+        0% {
+            transform: scale(1) rotate(0deg);
+            filter: brightness(100%);
+        }
+        45% {
+            transform: scale(1.03) rotate(-3deg);
+            filter: brightness(100%);
+        }
+        50% {
+            transform: scale(1.05) rotate(-6deg);
+            filter: brightness(190%);
+        }
+        55% {
+            transform: scale(1.03) rotate(-3deg);
+            filter: brightness(100%);
+        }
+        0% {
+            transform: scale(1) rotate(0deg);
+            filter: brightness(100%);
+        }
+    }
+    
+    
+    /*video*/
+    
+    .distancia {
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 120vh;
+        z-index: 1000;
+        
+      
+    
+        
+    }
+    .nebula {
+    
+        position: absolute;
+        width: 100vw;
+        height: 140vh;
+        
+    
+    }
+    .distancia .titleDist {
+        color: var(--cor-branco);
+       
+        text-align: center;
+        font-family: var(--fonteNasa);
+        margin-bottom: 100px;
+        z-index: 99;
+    }
+   
+
+  
+    .explorar {
+    
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      
+    
+    }
+    
+   .explorar .titleExp h2 {
+    
+        color: var(--cor-branco);
+        font-size: 20px;
+        font-family: var(--fonteNasa);
+        text-align: center;
+        margin-bottom: 30px;
+    
+    }
+    .nebula {
+    
+        opacity: 0.6;
+    }
+    
+
+
+    @media (max-width:800px) {
+        .evento {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            height: 60vh;
+           
+        }
+        .evento h2 {
+            color: var(--cor-branco);
+            font-family: var(--fonteSpace);
+            font-size: 15px;
+        }
+
+        .evento .marte {
+            position: absolute;
+            right: 0;
+            width: 100px;
+            animation: balanco 10.0s linear infinite;
+        
+        }
+        .evento .kepler {
+            position: absolute;
+            left: 0;
+            width: 150px;
+            animation: balanco 10.0s linear infinite;
+        }
+
+        .cards {
+            padding: 25px;
+        }
+
+        .infos .infoImage img  {
+       
+            height: 30vh;
+            width: 65vw;
+            animation: nave 8.0s linear infinite;
+        }
+
+        .infos .infoTitle {
+    
+            color: var(--cor-branco);
+            font-family:var(--fonteNasa);
+            font-size: 50px;
+            text-align: center;
+            padding: 20px;
+        
+        }
+        .titleDist p {
+            font-size: 40px;
+        }
+    }
