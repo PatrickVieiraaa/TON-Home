@@ -175,16 +175,13 @@ main {
     justify-content: center;
     align-items: center;
     background: url(/assets/images/solar\ sistem.png) left top;
-  
     background-size: cover;
 }
-
 .infos .infoTitle {
 
     color: var(--cor-branco);
     font-family:var(--fonteNasa);
     font-size: 80px;
-    
 
 }
 .infos .infoImage img  {
@@ -228,7 +225,6 @@ main {
     justify-content: center;
     height: 120vh;
     z-index: 1000;
-    margin-bottom: 70px;
     
   
 
@@ -250,7 +246,10 @@ main {
     margin-bottom: 100px;
     z-index: 99;
 }
+.videoDist {
 
+    z-index: 99;
+}
 
 .explorar {
 
@@ -274,7 +273,7 @@ main {
 }
 .nebula {
 
-    opacity: 0.4;
+    opacity: 0.6;
 }
 
 
@@ -707,4 +706,4 @@ main {
             font-size: 13px;
         }
 
-    
+    }
