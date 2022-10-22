@@ -10,3 +10,4 @@ ScrollReveal().reveal('.infos', {duration: 3500});
 ScrollReveal().reveal('.distancia', {duration: 1500});
 ScrollReveal().reveal('.videoDist', {duration: 1500});
 ScrollReveal().reveal('.explorar', {duration: 4500});
+
