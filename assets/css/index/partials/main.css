@@ -530,11 +530,13 @@ main {
         justify-content: center;
         height: 120vh;
         z-index: 1000;
+       
         
       
     
         
     }
+   
     .nebula {
     
         position: absolute;
